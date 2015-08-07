@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="edd-Zk-Tkn">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u5i-1w-f0q">
+                                <rect key="frame" x="110" y="254" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="JeF-VT-Ozx"/>
+                                    <constraint firstAttribute="width" constant="100" id="NkS-Xd-ehf"/>
+                                </constraints>
+                                <state key="normal" title="系统相机" backgroundImage="common_btn_small_nor.png">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="common_btn_small_press.png"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="JeF-VT-Ozx"/>
+                                        <exclude reference="NkS-Xd-ehf"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="pressSysCamera:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="qvH-KM-ZVm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dS5-aU-J5W">
+                                <rect key="frame" x="110" y="342" width="100" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="QSh-rq-RNa"/>
+                                    <constraint firstAttribute="width" constant="100" id="aga-NT-vXJ"/>
+                                </constraints>
+                                <state key="normal" title="自定义相机" backgroundImage="common_top_btn_nor.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="common_top_btn_press.png"/>
+                                <connections>
+                                    <action selector="pressCusCamera:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="B1p-gt-7oP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WJCustomCameraDemo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3yj-L4-sFM">
+                                <rect key="frame" x="0.0" y="64" width="320" height="130"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="KJ6-Fg-jEI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="dS5-aU-J5W" secondAttribute="centerX" id="5r4-8P-JJy"/>
+                            <constraint firstItem="u5i-1w-f0q" firstAttribute="width" secondItem="dS5-aU-J5W" secondAttribute="width" id="BL8-tU-oPW"/>
+                            <constraint firstItem="u5i-1w-f0q" firstAttribute="top" secondItem="3yj-L4-sFM" secondAttribute="bottom" constant="60" id="Djn-Mm-hLL"/>
+                            <constraint firstItem="u5i-1w-f0q" firstAttribute="top" secondItem="dS5-aU-J5W" secondAttribute="bottom" constant="30" id="J2v-51-QVg"/>
+                            <constraint firstItem="3yj-L4-sFM" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="30" id="Thr-OD-gjx"/>
+                            <constraint firstItem="3yj-L4-sFM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="W9L-H3-Pks"/>
+                            <constraint firstAttribute="centerX" secondItem="u5i-1w-f0q" secondAttribute="centerX" id="bNY-h5-GDI"/>
+                            <constraint firstItem="dS5-aU-J5W" firstAttribute="top" secondItem="u5i-1w-f0q" secondAttribute="bottom" constant="38" id="eJY-Hi-LIb"/>
+                            <constraint firstItem="u5i-1w-f0q" firstAttribute="top" secondItem="3yj-L4-sFM" secondAttribute="bottom" constant="80" id="fTx-To-p45"/>
+                            <constraint firstItem="u5i-1w-f0q" firstAttribute="height" secondItem="dS5-aU-J5W" secondAttribute="height" id="lmX-jD-xa0"/>
+                            <constraint firstItem="u5i-1w-f0q" firstAttribute="height" secondItem="dS5-aU-J5W" secondAttribute="height" id="qXN-dq-TBY"/>
+                            <constraint firstItem="dS5-aU-J5W" firstAttribute="top" secondItem="3yj-L4-sFM" secondAttribute="bottom" constant="30" id="rYV-HK-eb0"/>
+                            <constraint firstItem="3yj-L4-sFM" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="viu-tz-p8t"/>
+                            <constraint firstAttribute="trailing" secondItem="3yj-L4-sFM" secondAttribute="trailing" id="w9Q-Ir-pX4"/>
+                            <constraint firstItem="u5i-1w-f0q" firstAttribute="width" secondItem="dS5-aU-J5W" secondAttribute="width" id="x4o-zr-jJ7"/>
+                            <constraint firstItem="dS5-aU-J5W" firstAttribute="top" secondItem="3yj-L4-sFM" secondAttribute="bottom" constant="25" id="yUY-aT-zZT"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Thr-OD-gjx"/>
+                                <exclude reference="BL8-tU-oPW"/>
+                                <exclude reference="J2v-51-QVg"/>
+                                <exclude reference="fTx-To-p45"/>
+                                <exclude reference="lmX-jD-xa0"/>
+                                <exclude reference="rYV-HK-eb0"/>
+                                <exclude reference="yUY-aT-zZT"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="dea-f4-OsM"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="eNQ-pu-bkO" kind="push" identifier="sys_segue" id="Y0J-Rs-ARj"/>
+                        <segue destination="pyc-RP-Fq3" kind="push" identifier="cus_segue" id="aw9-St-GGZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1933" y="350"/>
+        </scene>
+        <!--Custom Camera View Controller-->
+        <scene sceneID="GS5-wx-wXG">
+            <objects>
+                <viewController storyboardIdentifier="cus_SID" id="pyc-RP-Fq3" customClass="CustomCameraViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5LA-hr-xXI"/>
+                        <viewControllerLayoutGuide type="bottom" id="N2P-C9-qqj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7FP-0T-Kae">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="W5J-Sp-EW3">
+                                <rect key="frame" x="0.0" y="64" width="320" height="260"/>
+                                <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="260" id="4cd-hL-w1q"/>
+                                </constraints>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bb2-RK-zhH">
+                                <rect key="frame" x="100" y="409" width="120" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="AzD-Wy-Mgo"/>
+                                    <constraint firstAttribute="height" constant="40" id="aLU-yt-zY8"/>
+                                </constraints>
+                                <state key="normal" title="拍照" backgroundImage="common_top_btn_nor.png">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted" backgroundImage="common_top_btn_press.png"/>
+                                <connections>
+                                    <action selector="PressTakePhoto:" destination="pyc-RP-Fq3" eventType="touchUpInside" id="KMj-DF-KwF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bb2-RK-zhH" firstAttribute="top" secondItem="W5J-Sp-EW3" secondAttribute="bottom" constant="85" id="GBG-U2-WE8"/>
+                            <constraint firstAttribute="centerX" secondItem="bb2-RK-zhH" secondAttribute="centerX" id="Izz-Vh-vvl"/>
+                            <constraint firstAttribute="trailing" secondItem="W5J-Sp-EW3" secondAttribute="trailing" id="Wtb-aW-93K"/>
+                            <constraint firstItem="W5J-Sp-EW3" firstAttribute="leading" secondItem="7FP-0T-Kae" secondAttribute="leading" id="sH2-Xs-Stn"/>
+                            <constraint firstItem="W5J-Sp-EW3" firstAttribute="top" secondItem="7FP-0T-Kae" secondAttribute="top" constant="64" id="yP2-cE-MjG"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="i13-xq-Rv7"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="myScrollView" destination="W5J-Sp-EW3" id="SrB-e8-6Yu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7In-S1-5jr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2340" y="561"/>
+        </scene>
+        <!--System Camera View Controller-->
+        <scene sceneID="5jR-O8-dZf">
+            <objects>
+                <viewController storyboardIdentifier="sys_SID" id="eNQ-pu-bkO" customClass="SystemCameraViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5Oj-Fv-59b"/>
+                        <viewControllerLayoutGuide type="bottom" id="MzO-f9-3AT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="PaI-kn-khV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhi-jP-jst">
+                                <rect key="frame" x="30" y="360" width="100" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="35" id="ETT-aG-TXB"/>
+                                    <constraint firstAttribute="width" constant="100" id="jfc-CM-P1C"/>
+                                </constraints>
+                                <state key="normal" title="拍照" backgroundImage="common_btn_small_nor.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressTakePhoto:" destination="eNQ-pu-bkO" eventType="touchUpInside" id="wiC-Sx-8ts"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zAU-fh-nLp">
+                                <rect key="frame" x="190" y="360" width="100" height="35"/>
+                                <state key="normal" title="本地相册" backgroundImage="common_top_btn_nor.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressPhotoLibrary:" destination="eNQ-pu-bkO" eventType="touchUpInside" id="iAc-0D-xXQ"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="top-779583.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="1Mp-vN-WsC">
+                                <rect key="frame" x="0.0" y="70" width="320" height="250"/>
+                                <color key="backgroundColor" white="0.75" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="mbp-Jg-kcd"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="zAU-fh-nLp" firstAttribute="height" secondItem="vhi-jP-jst" secondAttribute="height" id="AeF-BB-Q1K"/>
+                            <constraint firstItem="zAU-fh-nLp" firstAttribute="top" secondItem="1Mp-vN-WsC" secondAttribute="bottom" constant="40" id="ND3-Bc-4K6"/>
+                            <constraint firstItem="1Mp-vN-WsC" firstAttribute="leading" secondItem="PaI-kn-khV" secondAttribute="leading" id="PUb-I8-flB"/>
+                            <constraint firstAttribute="trailing" secondItem="1Mp-vN-WsC" secondAttribute="trailing" id="Tep-9b-lys"/>
+                            <constraint firstItem="zAU-fh-nLp" firstAttribute="width" secondItem="vhi-jP-jst" secondAttribute="width" id="d1p-Jg-2RE"/>
+                            <constraint firstItem="vhi-jP-jst" firstAttribute="top" secondItem="1Mp-vN-WsC" secondAttribute="bottom" constant="40" id="eqG-i9-PIm"/>
+                            <constraint firstAttribute="trailing" secondItem="zAU-fh-nLp" secondAttribute="trailing" constant="30" id="giR-Fr-Aj3"/>
+                            <constraint firstItem="vhi-jP-jst" firstAttribute="leading" secondItem="PaI-kn-khV" secondAttribute="leading" constant="30" id="q50-mS-xdf"/>
+                            <constraint firstItem="1Mp-vN-WsC" firstAttribute="top" secondItem="PaI-kn-khV" secondAttribute="top" constant="70" id="rKd-vy-nQ6"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="jx3-9i-EYP"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="myImageView" destination="1Mp-vN-WsC" id="c72-Z6-5hi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lmr-nA-OcJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2340" y="-136"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="5ne-1r-76N">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="edd-Zk-Tkn" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Xui-ff-Pqz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="1lr-WK-ACd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kEA-d4-DsL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1514" y="362"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="common_btn_small_nor.png" width="90" height="40"/>
+        <image name="common_btn_small_press.png" width="90" height="40"/>
+        <image name="common_top_btn_nor.png" width="50" height="30"/>
+        <image name="common_top_btn_press.png" width="50" height="30"/>
+        <image name="top-779583.jpg" width="1024" height="768"/>
+    </resources>
+</document>
