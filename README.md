@@ -8,7 +8,7 @@
 
 
 ##效果图
-![WJCustomCameraDemo](https://github.com/WinJayQ/WJCustomCameraDemo/raw/master/WJCommboxDemo/1.jpg) 
-![WJCustomCameraDemo](https://github.com/WinJayQ/WJCustomCameraDemo/raw/master/WJCommboxDemo/2.jpg) 
-![WJCustomCameraDemo](https://github.com/WinJayQ/WJCustomCameraDemo/raw/master/WJCommboxDemo/3.jpg) 
-![WJCustomCameraDemo](https://github.com/WinJayQ/WJCustomCameraDemo/raw/master/WJCommboxDemo/4.jpg) 
+![image](https://github.com/WinJayQ/WJCustomCameraDemo/raw/master/WJCustomCameraDemo/1.jpg) 
+![image](https://github.com/WinJayQ/WJCustomCameraDemo/raw/master/WJCustomCameraDemo/2.jpg) 
+![image](https://github.com/WinJayQ/WJCustomCameraDemo/raw/master/WJCustomCameraDemo/3.jpg) 
+![image](https://github.com/WinJayQ/WJCustomCameraDemo/raw/master/WJCustomCameraDemo/4.jpg) 
